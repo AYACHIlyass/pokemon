@@ -1,4 +1,4 @@
-import {ApiRessouce} from "../../../model/ApiRessouce";
+import {ApiResource} from "../../../model/ApiResource";
 import {useQuery} from "react-query";
 import {fetchPokemon} from "../../../service/PokemonService";
 import {Box, Card, CardContent, CardMedia, Grid, Typography} from "@mui/material";
@@ -6,13 +6,13 @@ import classes from "./PokemonItem.module.css"
 import cardLoader from '../../../assets/images/cardLoader.gif';
 import pokeBall from '../../../assets/images/pokeBall.png';
 
-export const PokemonItem = (apiRessouce: ApiRessouce) => {
+export const PokemonItem = (apiResource: ApiResource) => {
     const {
         isLoading,
         data: pokemon,
         isError,
-    } = useQuery(apiRessouce.url,
-        () => fetchPokemon(apiRessouce.url), {refetchOnWindowFocus: false})
+    } = useQuery(apiResource.url,
+        () => fetchPokemon(apiResource.url), {refetchOnWindowFocus: false})
     return <Grid item mx={3} xs={6} sm={4} md={3} style={{height: '100%'}}>
         <Card className={classes.cardContainer}>
             {isLoading && <img src={cardLoader} className={classes.cardLoader}></img>}

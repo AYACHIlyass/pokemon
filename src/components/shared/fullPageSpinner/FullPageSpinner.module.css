@@ -1,0 +1,20 @@
+.overLay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #00000038;
+    opacity: 1;
+    z-index: 9999999;
+}
+
+.spinnerContainer {
+    align-self: center;
+    color: #3e3e3e;
+}

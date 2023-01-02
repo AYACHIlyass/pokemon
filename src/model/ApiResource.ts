@@ -1,4 +1,4 @@
-export type ApiRessouce = {
+export type ApiResource = {
     name: string,
     url: string
 }

@@ -1,5 +1,5 @@
 import {Ability} from "./Ability";
-import {ApiRessouce} from "./ApiRessouce";
+import {ApiResource} from "./ApiResource";
 import {Stat} from "./Stat";
 
 export type Pokemon = {
@@ -9,7 +9,7 @@ export type Pokemon = {
     weight: number,
     order: number,
     abilities: Ability[],
-    types: ApiRessouce[],
+    types: ApiResource[],
     stats: Stat[],
     sprites: {
         other: {

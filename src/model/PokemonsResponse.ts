@@ -1,6 +1,6 @@
-import {ApiRessouce} from "./ApiRessouce";
+import {ApiResource} from "./ApiResource";
 
 export type PokemonsResponse = {
     next: string,
-    results: ApiRessouce []
+    results: ApiResource []
 };

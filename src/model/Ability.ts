@@ -1,6 +1,6 @@
-import {ApiRessouce} from "./ApiRessouce";
+import {ApiResource} from "./ApiResource";
 
 export type Ability = {
-    ability:ApiRessouce,
+    ability:ApiResource,
     isHidden:boolean
 }

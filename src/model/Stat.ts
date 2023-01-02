@@ -1,7 +1,7 @@
-import {ApiRessouce} from "./ApiRessouce";
+import {ApiResource} from "./ApiResource";
 
 export type Stat = {
     base_stat:number,
     effort:number,
-    stat:ApiRessouce
+    stat:ApiResource
 }
